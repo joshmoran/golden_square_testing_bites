@@ -11,4 +11,3 @@ class Gratitudes:
         formatted = "Be grateful for: "
         formatted += ", ".join(self.gratitudes)
         return formatted
-gratitudes.py
