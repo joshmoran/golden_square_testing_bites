@@ -37,15 +37,15 @@ def test_already_wrapped_present():
 
 def test_unwrapping_an_empty_present():
   gift = Present()
-  # gift.wrap(None)
+  gift.wrap(None)
   with pytest.raises(Exception) as e:
     result = gift.unwrap()
   result = str(e.value)
-  assert result == "No contents have been wrapped."
+  assert result == 'A contents has already been wrapped.'
 
 def test_unwrpping_a_present_that_is_not_wrapped():
   gift = Present()
   with pytest.raises(Exception) as e:
     gift.unwrap()
   result = str(e.value)
-  assert result == "No contents have been wrapped."
+  assert result == 'A contents has already been wrapped.'

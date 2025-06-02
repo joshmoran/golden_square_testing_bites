@@ -11,5 +11,5 @@ class Present:
 
     def unwrap(self):
         if self.contents is None:
-            raise Exception("No contents have been wrapped.")
+            raise Exception("A contents has already been wrapped.")
         return self.contents
